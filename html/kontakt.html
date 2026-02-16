@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Lillmusties</title>
+		<link rel = "stylesheet" href="../assets/assets.css">
+	</head>
+<body>
+	<header class="site-header">
+		<div class="header-inner">
+	  
+		  <div class="brand">
+			<h1>Lillmusties Kennel</h1>
+			<span class="tagline">Svensk Lapphund sedan 1971</span>
+		  </div>
+	  
+		  		<!-- ÖPPNA MENY -->
+		<a href="#menu" class="menu-button">☰ Meny</a>
+
+		<!-- SIDOMENY -->
+		<nav id="menu" class="side-menu">
+
+		<!-- STÄNGKNAPP -->
+		<a href="#" class="close-btn">→</a>
+
+		<ul class="menu-list">
+
+			<li><a href="index.html">Start</a></li>
+			<li><a href="om-oss.html">Om oss</a></li>
+			<li><a href="våra-hundar.html">Våra hundar</a></li>
+
+			<li class="submenu-container">
+
+				<!-- Klickbar länk till valpar.html -->
+				<a href="valpar.html" class="menu-link-with-sub">Valpar</a>
+				
+				<!-- checkbox styr utfällning -->
+				<input type="checkbox" id="valpar-toggle">
+				
+				<!-- Klickbar plus-knapp för utfällning -->
+				<label for="valpar-toggle" class="submenu-toggle">
+					<span class="plus"></span>
+				</label>
+
+				<ul class="submenu">
+					<li><a href="aktuella-kullar.html">Aktuella kullar</a></li>
+					<li><a href="planerade-kullar.html">Planerade kullar</a></li>
+					<li><a href="tidigare-kullar.html">Tidigare kullar</a></li>
+				</ul>
+
+			</li>
+
+			<li><a href="kontakt.html">Kontakt</a></li>
+
+		</ul>
+		</nav>
+	  
+		</div>
+	  </header>
+	  <div class="sub-nav">
+		<a href="index.html">Start</a>
+		<span>/</span>
+		<span class="current">Kontakt</span>
+	  </div>
+	  
+	<main>
+		<h2 class="rubrik-omoss">Kontakta oss</h2>
+
+<section class="kontakt-layout">
+
+  <!-- VÄNSTER KOLUMN -->
+  <div class="kontakt-image">
+    <img src="../images/framsida.jpg" >
+  </div>
+
+	<div class="kontakt-form-wrapper">
+  
+	  <form class="kontakt-form">
+  
+		<div class="form-row">
+		  <div class="form-group">
+			<label>Namn *</label>
+			<input type="text" required>
+		  </div>
+  
+		  <div class="form-group">
+			<label>E-post *</label>
+			<input type="email" required>
+		  </div>
+		</div>
+  
+		<div class="form-row">
+		  <div class="form-group">
+			<label>Telefon/SMS *</label>
+			<input type="tel" placeholder="+46 701234567" required>
+			<small>Ange internationellt format utan inledande 0.</small>
+		  </div>
+  
+		  <div class="form-group">
+			<label>Jag vill få hjälp med *</label>
+			<select required>
+			  <option>Välj ett alternativ</option>
+			  <option>Aktuell kull</option>
+			  <option>Planerad kull</option>
+			  <option>Allmän fråga</option>
+			</select>
+		  </div>
+		</div>
+  
+		<div class="form-group">
+		  <label>Meddelande *</label>
+		  <textarea rows="6" required></textarea>
+		</div>
+  
+		<button type="submit" class="btn">Skicka</button>
+  
+	  </form>
+  
+	</div>
+  
+  </section>
+  
+<section class="vagbeskrivning"> 	  
+	<p>
+		<a href="https://maps.app.goo.gl/LX4P9GHx6NiFvCY28"
+			target="_blank"
+			rel="noopener">
+			Se större karta och få vägbeskrivning
+		</a>
+		</p>
+			  
+	  	  
+</section>
+
+</section>
+
+	</main>
+		<footer class="site-footer">
+			<div class="footer-inner">
+		  
+			  <section>
+				<h4>Kontakta oss</h4>
+				<p>
+				  Telefon: 0410-27147<br>
+				  Mobil: 0703-148183<br>
+				  E-post: <a href="mailto:kennel@lillmusties.se">kennel@lillmusties.se</a>
+				</p>
+			  </section>
+		  
+			  <section>
+				<p>&copy; 2026 Wilma Henriksson</p>
+			  </section>
+		  
+			</div>
+		</footer>
+</body>
+</html>
