@@ -1,7 +1,7 @@
 /* =========================
    GENERAL
 ========================= */
-* {
+ *{
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
@@ -64,7 +64,7 @@
 	width: 100%;
   }
 
-.sub-nav {
+  .sub-nav {
 	background-color: #2f3b1f;
 	padding: 0.6rem 1.5rem;
 	font-size: 0.95rem;
@@ -76,26 +76,39 @@
 	font-weight: 400;
   }
   
-  /* Ta bort lila visited-färg */
   .sub-nav a:visited {
 	color: white;
   }
   
-  /* Hover-effekt */
   .sub-nav a:hover {
 	text-decoration: underline;
   }
   
-  /* Aktuell sida */
   .sub-nav .current {
 	font-weight: 700;
 	color: white;
   }
+
+  .main-nav ul {
+	list-style: none;
+	display: flex;
+	gap: 1.5rem;
+  }
   
+  .main-nav a {
+	color: #fff;
+	text-decoration: none;
+	font-weight: 600;
+  }
+  
+  .main-nav a:hover {
+	text-decoration: underline;
+  }
+  
+
   /* =========================
-   SIDOMENY
+   SIDEMENUE
 ========================= */
-/* MENYKNAPP */
 .menu-button {
 	border: 2px solid #2f3b1f;
 	padding: 0.5rem 1rem;
@@ -104,7 +117,6 @@
 	color: #2f3b1f;
 }
 
-/* MENY */
 .side-menu {
 	position: fixed;
 	top: 0;
@@ -117,12 +129,10 @@
 	z-index: 1000;
 }
 
-/* ÖPPNA via :target */
 #menu:target {
 	right: 0;
 }
 
-/* STÄNGKNAPP */
 .close-btn {
 	display: block;
 	text-align: right;
@@ -132,7 +142,6 @@
 	color: #2f3b1f;
 }
 
-/* MENYLISTA */
 .menu-list {
 	list-style: none;
 	padding: 0;
@@ -151,12 +160,10 @@
 	font-weight: 600;
 }
 
-/* HOVER */
 .menu-list > li > a:hover {
 	background: rgba(255,255,255,0.1);
 }
 
-/* VALPAR-RAD MED LÄNK OCH TOGGLE */
 .submenu-container {
 	position: relative;
 }
@@ -168,7 +175,7 @@
 .menu-link-with-sub {
 	display: block;
 	padding: 1.2rem;
-	padding-right: 60px; /* Plats för plus-knappen */
+	padding-right: 60px; 
 	color: white;
 	text-decoration: none;
 	font-size: 1.3rem;
@@ -184,7 +191,7 @@
 	right: 0;
 	top: 0;
 	width: 60px;
-	height: 65px; /* Fast höjd som matchar länken */
+	height: 65px; 
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -199,12 +206,10 @@
 	display: block;
 }
 
-/* Byt + till − */
 #valpar-toggle:checked + .submenu-toggle .plus::after {
 	content: "−";
 }
 
-/* SUBMENU */
 .submenu {
 	display: none;
 	list-style: none;
@@ -229,36 +234,38 @@
 	background: rgba(255,255,255,0.15);
 }
 
-/* Visa submenu när checkbox är ikryssad */
 #valpar-toggle:checked ~ .submenu {
 	display: block;
 }
 
-  /* =========================
-	 MENY
+/* =========================
+	 FOOTER
   ========================= */
-  .main-nav ul {
-	list-style: none;
-	display: flex;
-	gap: 1.5rem;
+  .site-footer {
+	background-color: #d7dbc3;
+	margin-top: 3rem;
+	width: 100%;
   }
   
-  .main-nav a {
-	color: #fff;
-	text-decoration: none;
-	font-weight: 600;
+  .footer-inner {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 1.5rem;
+	text-align: center;
+	font-size: 0.9rem;
   }
   
-  .main-nav a:hover {
-	text-decoration: underline;
+  .site-footer a {
+	color: #000;
   }
-  
+
  /* =========================
 	 STARTSIDA
   ========================= */
   .page-title{
 	padding: 2rem;
   }
+
   .framsida {
 	width: 100vw;
 	margin-left: calc(50% - 50vw);
@@ -352,24 +359,55 @@
   }
 
   /* =========================
-	 FOOTER
-  ========================= */
-  .site-footer {
-	background-color: #d7dbc3;
-	margin-top: 3rem;
+   VÅRA HUNDAR
+========================= */
+
+.intro-text {
+	padding: 0 2rem 1rem 2rem;
+  }
+  
+  .section-title {
+	padding: 2rem 2rem 1rem 2rem;
+  }
+  
+  .memory-text {
+	padding: 0 2rem 1rem 2rem;
+  }
+  
+  .hund-grid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 2rem;
+	padding: 0 2rem 2rem 2rem;
+  }
+  
+  .hund-card {
+	background: #f3f3f3;
+	overflow: hidden;
+	box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+	transition: transform 0.3s ease;
+  }
+  
+  .hund-card img {
 	width: 100%;
+	height: 320px;
+	object-fit: cover;
+	display: block;
   }
   
-  .footer-inner {
-	max-width: 1200px;
-	margin: 0 auto;
-	padding: 1.5rem;
+  .hund-info {
+	padding: 1rem;
 	text-align: center;
-	font-size: 0.9rem;
   }
   
-  .site-footer a {
-	color: #000;
+  .hund-info h4 {
+	margin-bottom: 0.3rem;
+	font-size: 1.1rem;
+  }
+  
+  .hund-info p {
+	font-size: 0.9rem;
+	color: #555;
   }
 
   /* =========================
@@ -427,6 +465,39 @@
   .valp-card:hover::after {
 	background-color: rgba(0,0,0,0.45);
   }
+
+  .ras-info {
+  padding: 2rem;
+}
+
+.ras-info table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+.ras-info th,
+.ras-info td {
+  border: 1px solid #ccc;
+  padding: 0.8rem;
+  text-align: left;
+}
+
+.ras-info th {
+  background-color: #7f8b4a;
+  color: white;
+}
+
+.ras-info a {
+  color: #6b2a2a;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.ras-info a:hover {
+  text-decoration: underline;
+}
+
   
   /* =========================
 	 AKTUELLA KULLAR
@@ -434,7 +505,6 @@
   .aktuella-text{
 	padding: 2rem;
   }
-
 
   .aktuella-image {
 	width: 100vw;
@@ -461,7 +531,77 @@
 	flex: 0 0 auto;  
   }
   
-  /* =========================
+/* =========================
+   PLANERADE KULLAR 
+========================= */
+
+/* PLANERADE KULLAR – SNYGG VERSION */
+
+.planned-wrapper {
+  padding: 4rem 2rem;
+  background: #fff;
+}
+
+.planned-text, .planned-header{
+	color: white;
+}
+
+.planned-card {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background: #6b2a2a;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 5px 10px rgba(156, 156, 156, 0.08);
+}
+
+/* Bild */
+.planned-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Text */
+.planned-content {
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.planned-content h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.planned-content p {
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+}
+
+/* Knapp */
+.planned-button {
+  display: inline-block;
+  background: #fff;
+  color: #6b2a2a;
+  padding: 0.9rem 1.8rem;
+  border-radius: 8px;
+  width: 170px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.planned-button:hover {
+  background: #d78787;
+}
+
+
+/* =========================
       KONTAKT LAYOUT
 ========================= */
 
@@ -481,17 +621,12 @@
 	display: block;
   }
   
-
-
-.kontakt-hero {
+ .kontakt-hero {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	min-height: 600px;
   }
-  
  
-  
-  
   .kontakt-form {
 	width: 100%;
   }
@@ -537,121 +672,33 @@
   .vagbeskrivning{
 	padding:2rem;
   }
- 
-/* =========================
-   VÅRA HUNDAR
-========================= */
-
-.intro-text {
-	padding: 0 2rem 1rem 2rem;
-  }
-  
-  .section-title {
-	padding: 2rem 2rem 1rem 2rem;
-  }
-  
-  .memory-text {
-	padding: 0 2rem 1rem 2rem;
-  }
-  
-  .hund-grid {
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	gap: 2rem;
-	padding: 0 2rem 2rem 2rem;
-  }
-  
-  .hund-card {
-	background: #f3f3f3;
-	overflow: hidden;
-	box-shadow: 0 4px 8px rgba(0,0,0,0.08);
-	transition: transform 0.3s ease;
-  }
-  
-  
-  .hund-card img {
-	width: 100%;
-	height: 320px;
-	object-fit: cover;
-	display: block;
-  }
-  
-  .hund-info {
-	padding: 1rem;
-	text-align: center;
-  }
-  
-  .hund-info h4 {
-	margin-bottom: 0.3rem;
-	font-size: 1.1rem;
-  }
-  
-  .hund-info p {
-	font-size: 0.9rem;
-	color: #555;
-  }
-
-  /* =========================
-	 Planerade kullar
-  ========================= */
-  .no-litter {
-	padding: 3rem 2rem;
-	font-size: 1.1rem;
-  }
-
-  .no-litter-box {
-	max-width: 1100px;
-	margin: 2rem auto;
-	padding: 2rem;
-	background-color: #f8d7da;      /* ljusröd bakgrund */
-	border: 2px solid  #6b2a2a;      /* mörkare röd kant */
-	border-radius: 8px;
-	margin-bottom: 7rem;
-  }
-
-  .no-litter-box a {
-	font-weight: 700;
-	text-decoration: underline;
-	color: #6b2a2a; /* mörkröd som passar rutan */
-  }
-  
-  .no-litter-box a:visited {
-	color:#6b2a2a; /* så den inte blir lila */
-  }
-  
-  .no-litter-box a:hover {
-	opacity: 0.8;
-  }
-  
-  
-  .no-litter-box p {
-	margin-bottom: 0.8rem;
-  }
-  
   
   /* =========================
 	 RESPONSIVT
   ========================= */
   @media (max-width: 768px) {
-  
-	@media (max-width: 768px) {
+	.header-inner {
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+	}
+	
+	.brand h1 {
+		font-size: 1.6rem;
+		line-height: 1.1;
+	}
+	
+	.tagline {
+		font-size: 0.75rem;
+	}
+	  
+	.planned-card {
+    grid-template-columns: 1fr;
+  }
 
-		.header-inner {
-		  flex-direction: row;
-		  justify-content: space-between;
-		  align-items: center;
-		}
-	  
-		.brand h1 {
-		  font-size: 1.6rem;
-		  line-height: 1.1;
-		}
-	  
-		.tagline {
-		  font-size: 0.75rem;
-		}
-	  
-	  }
+  .planned-image {
+    height: 300px;
+  }
 	  
 	.start {
 		grid-template-columns: 1fr;
@@ -688,17 +735,40 @@
 	.hund-card img {
 		height: 250px;
 	}
+
 	.kontakt-hero {
 		grid-template-columns: 1fr;
-	  }
-	
-	  .form-row {
-		grid-template-columns: 1fr;
-	  }
-	
-	  .kontakt-image {
-		height: 300px;
-	  }
+	}
 
+	.form-row {
+		grid-template-columns: 1fr;
+	}
+
+	.kontakt-image {
+		height: 300px;
+	}
   }
+
+  @media print {
+
+  .side-menu,
+  .menu-button,
+  .sub-nav,
+  .site-footer,
+  video {
+    display: none;
+  }
+
+  body {
+    background: white;
+    color: black;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+}
+
   
