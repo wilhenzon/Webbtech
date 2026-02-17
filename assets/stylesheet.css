@@ -489,8 +489,12 @@
 }
 
 .ras-info {
-  overflow-x: auto;
-}
+ width: 100%;
+  }
+
+  .ras-text{
+	padding: 2rem;
+  }
 
 
 .ras-info th,
