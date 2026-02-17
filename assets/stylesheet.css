@@ -41,11 +41,29 @@
 	justify-content: space-between;
 	align-items: center;
   }
+
+  .header-inner {
+  display: flex;
+  justify-content: space-between; /* behåll denna */
+  align-items: center;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.logo {
+  height: 70px;
+  width: auto;
+}
   
   .brand h1 {
 	font-size: 2rem;
 	color: white;
   }
+
   
   .tagline {
 	font-size: 0.85rem;
@@ -669,10 +687,42 @@
 	color: #666;
   }
   
-  .vagbeskrivning{
-	padding:2rem;
-  }
-  
+.k-text {
+	grid-column: 1 / -1; 
+
+}
+
+.kontakt-info {
+  display: grid;
+	grid-template-columns: 1fr 2fr;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 2rem 1.5rem;
+}
+
+.adress-box {
+  background: #f3f3f3;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  height: 350px;
+}
+
+.karta-knapp {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.6rem 1.2rem;
+  background: #7f8b4a;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.karta-knapp:hover {
+  background: #5f6b32;
+}
+
   /* =========================
 	 RESPONSIVT
   ========================= */
