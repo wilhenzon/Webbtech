@@ -481,15 +481,15 @@
 	background-color: rgba(0,0,0,0.45);
   }
 
-  .ras-info {
-  padding: 2rem;
+  .ras-info table {
+  width: 100%;
+  min-width: 600px;
 }
 
-.ras-info table {
+.ras-info {
   overflow-x: auto;
-  border-collapse: collapse;
-  margin-top: 1rem;
 }
+
 
 .ras-info th,
 .ras-info td {
