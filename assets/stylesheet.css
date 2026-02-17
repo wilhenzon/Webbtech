@@ -284,20 +284,22 @@
 	padding: 2rem;
   }
 
-  .framsida {
-	width: 100vw;
-	margin-left: calc(50% - 50vw);
-	overflow: hidden;
-	margin-bottom: 2rem; 
-  }
-  
-  .framsida video {
-	width: 100%;
-	height: 570px;
-	object-fit: cover;
-	display: block;
-  }
+.framsida {
+  position: relative;
+  width: 100%;
+  height: 570px;   /* samma höjd du hade innan */
+  overflow: hidden;
+}
+
+.framsida video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
  
+  
   .start {
 	display: grid;
 	grid-template-columns: 2fr 1fr;
