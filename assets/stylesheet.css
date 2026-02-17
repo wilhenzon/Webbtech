@@ -122,7 +122,13 @@
 	text-decoration: none;
 	font-weight: 600;
 	color: #2f3b1f;
+	display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
+
+
+
 
 .side-menu {
 	position: fixed;
@@ -737,6 +743,10 @@
 
   .planned-image {
     height: 300px;
+  }
+
+    .menu-button .text {
+    display: none;
   }
 	  
 	.start {
