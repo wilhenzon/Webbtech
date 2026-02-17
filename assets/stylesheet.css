@@ -128,7 +128,9 @@
 }
 
 
-
+.menu-button .text {
+  display: inline;
+}
 
 .side-menu {
 	position: fixed;
@@ -746,7 +748,7 @@
   }
 
     .menu-button .text {
-    display: none;
+    display: none !important;
   }
 	  
 	.start {
