@@ -29,7 +29,8 @@
 	 HEADER
   ========================= */
   .site-header {
-	background: linear-gradient(#777F34, #8C9156);	width: 100%;
+	background: linear-gradient(#777F34, #8C9156);	
+	width: 100%;
 	height: 120px;
   }
   
@@ -43,24 +44,12 @@
 	  gap: 2rem;   /* lagom mellanrum */
   }
 
-  .header-inner {
-  display: flex;
-  justify-content: space-between; /* behåll denna */
-  align-items: center;
-}
-
 .brand {
   display: flex;
   align-items: center;
   gap: 1.5rem;
 }
 
-.logo {
-  height: 70px;
-  width: auto;
-}
-
-  
   .brand h1 {
 	font-size: 2rem;
 	color: white;
@@ -86,12 +75,6 @@
 	padding: 0.4rem 1.5rem;
 	font-size: 0.9rem;
 	width: 100%;
-  }
-
-  .sub-nav {
-	background-color: #2f3b1f;
-	padding: 0.6rem 1.5rem;
-	font-size: 0.95rem;
   }
   
   .sub-nav a {
@@ -495,7 +478,7 @@
 }
 
 .ras-info table {
-  width: 100%;
+  overflow-x: auto;
   border-collapse: collapse;
   margin-top: 1rem;
 }
@@ -759,6 +742,14 @@
 	.start {
 		grid-template-columns: 1fr;
 	}
+	.framsida video {
+    height: 300px;
+  }
+
+  .valp-card span {
+    bottom: 1rem;
+    left: 1rem;
+  }
   
 	.about-top {
 		grid-template-columns: 1fr;
@@ -803,27 +794,35 @@
 	.kontakt-image {
 		height: 300px;
 	}
+
+	.kontakt-layout {
+    grid-template-columns: 1fr;
   }
 
-  @media print {
-
-  .side-menu,
-  .menu-button,
-  .sub-nav,
-  .site-footer,
-  video {
-    display: none;
+  .kontakt-info {
+    grid-template-columns: 1fr;
+  }
   }
 
-  body {
-    background: white;
-    color: black;
-  }
+@media print {
 
-  img {
-    max-width: 100%;
-    height: auto;
-  }
+	.side-menu,
+	.menu-button,
+	.sub-nav,
+	.site-footer,
+	video {
+		display: none;
+	}
+
+	body {
+		background: white;
+		color: black;
+	}
+
+	img {
+		max-width: 100%;
+		height: auto;
+	}
 
 }
 
