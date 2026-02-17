@@ -482,7 +482,7 @@
   }
 
   .ras-info table {
-	padding-left: 2rem;
+	padding: 2rem;
   width: 100%;
   max-width: 1200px;
   min-width: 600px;
@@ -490,11 +490,11 @@
 
 .ras-info {
  width: 100%;
+ 	padding: 2rem;
+
   }
 
-  .ras-text{
-	padding: 2rem;
-  }
+
 
 
 .ras-info th,
