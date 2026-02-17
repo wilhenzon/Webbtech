@@ -11,7 +11,7 @@
 		 <div class="header-inner">
 
 			<div class="brand">
-			<img src="../images/logga 1.png" alt="Lillmusties logotyp" class="logo">
+			<img src="../images/logga1.png" alt="Lillmusties logotyp" class="logo">
 			
 			<div class="brand-text">
 				<h1>Lillmusties Kennel</h1>
@@ -37,28 +37,26 @@
 			<!-- VALPAR MED UNDERSIDA -->
 			<li class="submenu-container">
 
-				<li class="submenu-container">
+				<!-- Klickbar länk till valpar.html -->
+				<a href="valpar.html" class="menu-link-with-sub">Valpar</a>
+				
+				<!-- checkbox styr utfällning -->
+				<input type="checkbox" id="valpar-toggle">
+				
+				<!-- Klickbar plus-knapp för utfällning -->
+				<label for="valpar-toggle" class="submenu-toggle">
+					<span class="plus"></span>
+				</label>
 
-					<!-- Klickbar länk till valpar.html -->
-					<a href="valpar.html" class="menu-link-with-sub">Valpar</a>
-					
-					<!-- checkbox styr utfällning -->
-					<input type="checkbox" id="valpar-toggle">
-					
-					<!-- Klickbar plus-knapp för utfällning -->
-					<label for="valpar-toggle" class="submenu-toggle">
-						<span class="plus"></span>
-					</label>
-	
-					<ul class="submenu">
-						<li><a href="aktuella-kullar.html">Aktuella kullar</a></li>
-						<li><a href="planerade-kullar.html">Planerade kullar</a></li>
-						<li><a href="tidigare-kullar.html">Tidigare kullar</a></li>
-					</ul>
-	
-				</li>
+				<ul class="submenu">
+					<li><a href="aktuella-kullar.html">Aktuella kullar</a></li>
+					<li><a href="planerade-kullar.html">Planerade kullar</a></li>
+					<li><a href="tidigare-kullar.html">Tidigare kullar</a></li>
+				</ul>
 
-			<li><a href="kontakt.html">Kontakt</a></li>
+			</li>
+
+			<a href="kontakt.html">Kontakt</a></li>
 
 		</ul>
 		</nav>
