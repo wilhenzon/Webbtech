@@ -483,6 +483,7 @@
 
   .ras-info table {
   width: 100%;
+  max-width: 1200px;
   min-width: 600px;
 }
 
