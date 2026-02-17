@@ -746,9 +746,12 @@
   .planned-image {
     height: 300px;
   }
+.menu-button {
+    font-size: 0;
+  }
 
-    .menu-button .text {
-    display: none !important;
+  .menu-button .icon {
+    font-size: 1.8rem;
   }
 	  
 	.start {
